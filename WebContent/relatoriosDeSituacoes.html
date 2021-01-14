@@ -20,7 +20,7 @@
         </nav>
     </header>
 
-    <h1>Pesquisa de aluno</h1>
+    <h1>Relatório de Situações</h1>
 
     <div id="infoMessage">
         (Aqui vai mensagem de sistema confirmando sucesso ou erro)
@@ -29,20 +29,17 @@
     <form>
         <fieldset>
             <legend>Parâmetros da Pesquisa</legend>
-            <label for="id">ID</label> <br>
-            <input type="text" name="id" id="id"><br />
-            <label for="nome">Nome</label> <br>
-            <input type="text" name="nome" id="nome"><br />
-            <label for="rg">RG</label> <br>
-            <input type="text" name="rg" id="rg"><br />
-            <label for="telefoneDDD">Telefone</label> <br>
-            <input type="tel" name="telefoneDDD" id="telefoneDDD">
-            <input type="tel" name="telefoneNumero" id="telefoneNumero"><br />
+            <label for="situacao">Situação</label><br>
+            <select name="situacao" id="situacao">
+                <option>Ativo</option>
+                <option>Inativo</option>
+                <option>Com pendência</option>
+            </select>
         </fieldset>
 
         <br>
 
-        <input type="submit" value="pesquisar">
+        <input type="submit" value="Gerar relatório">
 
     </form>
 
@@ -50,38 +47,38 @@
         <tr>
             <th>ID</th>
             <th>Nome</th>
-            <th>RG</th>
-            <th>E-mail</th>
             <th>Situação</th>
+            <th>Celular</th>
+            <th>Fixo</th>
             <th>Ações</th>
         <tr>
             <td>1</td>
             <td>André Meira</td>
-            <td>106156980</td>
-            <td>andremeirati@gmail.com</td>
             <td>Ativo</td>
+            <td>(41) 997006885</td>
+            <td>(41) 997006885</td>
             <td>
                 <input type="button" value="Editar">
                 <input type="button" value="Excluir">
             </td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>Sr. Maromba</td>
-            <td>12345678988</td>
-            <td>srmaromba@loucademia.com.br</td>
-            <td>Com pendência</td>
+            <td>1</td>
+            <td>André Meira</td>
+            <td>Ativo</td>
+            <td>(41) 997006885</td>
+            <td>(41) 997006885</td>
             <td>
                 <input type="button" value="Editar">
                 <input type="button" value="Excluir">
             </td>
         </tr>
         <tr>
-            <td>3</td>
-            <td>Zé Fit</td>
-            <td>98765432100</td>
-            <td>zefit@softblue.com.br</td>
-            <td>Inativo</td>
+            <td>1</td>
+            <td>André Meira</td>
+            <td>Ativo</td>
+            <td>(41) 997006885</td>
+            <td>(41) 997006885</td>
             <td>
                 <input type="button" value="Editar">
                 <input type="button" value="Excluir">
