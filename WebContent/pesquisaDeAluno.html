@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loucademia</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/gym-logo.png" width="150px" height="100px" />
+        <nav>
+            <div>
+                <a href="novoAluno.html">Novo aluno</a> <br />
+                <a href="pesquisaDeAluno.html">Pesquisa de aluno</a> <br />
+                <a href="controleDeAcesso.html">Controle de acesso</a> <br />
+                <a href="relatoriosDeEntradaSaida.html">Relatório de entradas e saídas</a> <br />
+                <a href="relatoriosDeSituacoes.html">Relatório de Situações</a> <br />
+            </div>
+        </nav>
+    </header>
+
+    <h1>Pesquisa de aluno</h1>
+
+    <div id="infoMessage">
+        (Aqui vai mensagem de sistema confirmando sucesso ou erro)
+    </div>
+
+    <form>
+        <fieldset>
+            <legend>Parâmetros da Pesquisa</legend>
+            <label for="id">ID</label> <br>
+            <input type="text" name="id" id="id"><br />
+            <label for="nome">Nome</label> <br>
+            <input type="text" name="nome" id="nome"><br />
+            <label for="rg">RG</label> <br>
+            <input type="text" name="rg" id="rg"><br />
+            <label for="telefoneDDD">Telefone</label> <br>
+            <input type="tel" name="telefoneDDD" id="telefoneDDD">
+            <input type="tel" name="telefoneNumero" id="telefoneNumero"><br />
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="pesquisar">
+
+    </form>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>RG</th>
+            <th>E-mail</th>
+            <th>Situação</th>
+            <th>Ações</th>
+        <tr>
+            <td>1</td>
+            <td>André Meira</td>
+            <td>106156980</td>
+            <td>andremeirati@gmail.com</td>
+            <td>Ativo</td>
+            <td>
+                <input type="button" value="Editar">
+                <input type="button" value="Excluir">
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sr. Maromba</td>
+            <td>12345678988</td>
+            <td>srmaromba@loucademia.com.br</td>
+            <td>Com pendência</td>
+            <td>
+                <input type="button" value="Editar">
+                <input type="button" value="Excluir">
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Zé Fit</td>
+            <td>98765432100</td>
+            <td>zefit@softblue.com.br</td>
+            <td>Inativo</td>
+            <td>
+                <input type="button" value="Editar">
+                <input type="button" value="Excluir">
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- Rodapé - Início-->
+</body>
+
+</html>
+<!-- Rodapé - Fim-->
